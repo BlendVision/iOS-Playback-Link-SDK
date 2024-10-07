@@ -106,7 +106,7 @@ do {
 ### To end a playback session, which stops the heartbeat to decrease concurrent viewers
 ```swift
 do {
-    try? await BVSessionManager.shared.endPlaybackSession()
+    try await BVSessionManager.shared.endPlaybackSession()
 } catch {
     print("Failed to stop session: \(error)")
 }
